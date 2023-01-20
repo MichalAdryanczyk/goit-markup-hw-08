@@ -1,0 +1,49 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--main {
+    background-image: linear-gradient(
+        to left,
+        var(--bg-image-color),
+        var(--bg-image-color)
+      ),
+      url(../images/background-img.jpg);
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+  }
+  &--profile {
+    padding-top: 0px;
+  }
+  &--team {
+    background-color: var(--light-back);
+  }
+  &__header {
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+  }
+  &__header {
+    &--hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.main-nav {
+  &__list {
+    margin-left: 93px;
+  }
+  &__li:not(:first-child) {
+    margin-left: 46px;
+  }
+  &__list-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--base-text-color);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--my-blue);
+    }
+    &--current-link {
+      color: var(--my-blue);
+      &::after {
+        display: block;
+        width: 53px;
+        height: 4px;
+        background-color: var(--my-blue);
+        position: absolute;
+        top: 77px;
+        border-radius: 2px;
+        content: "";
+      }
+    }
+  }
+}
