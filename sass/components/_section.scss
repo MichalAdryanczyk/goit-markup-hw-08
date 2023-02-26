@@ -1,7 +1,11 @@
 .section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
-
+  
   &--main {
     background-image: linear-gradient(
         to left,
@@ -21,12 +25,15 @@
   }
   &--profile {
     padding-top: 0px;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   &--team {
     background-color: var(--light-back);
   }
   &__header {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin: 0px 0px 50px 0px;

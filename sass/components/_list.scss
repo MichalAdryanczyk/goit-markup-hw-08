@@ -2,12 +2,14 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   &__advantage-header {
     font-size: 14px;
     line-height: 1.14;
     margin-top: 0px;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__advantage-detail {
     font-size: 14px;
@@ -15,6 +17,7 @@
     color: var(--light-text-color);
     margin-top: 0px;
     margin-bottom: 0px;
+    max-width: 450px;
   }
   &__profile-li {
     position: relative;
@@ -61,7 +64,8 @@
   }
   &__advantage-img {
     display: flex;
-    width: 270px;
+    max-width: 450px;
+    // width: 270px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -75,7 +79,7 @@
     justify-content: center;
     fill: currentColor;
     color: #afb1b8;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
