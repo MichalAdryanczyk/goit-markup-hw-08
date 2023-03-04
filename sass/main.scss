@@ -1,7 +1,6 @@
 // @use "./utils/vars" as *;
 @import "./utils/vars";
 @import "./components/section";
-@import "./components/container";
 @import "./components/main-section";
 @import "./components/logo";
 @import "./components/list";
@@ -15,6 +14,7 @@
 @import "./components/order-form";
 @import "./components/product-tab";
 @import "./components/checkbox";
+@import "./components/container";
 
 /*------------markup reset---------------  */
 h1,

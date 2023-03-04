@@ -12,10 +12,19 @@
 //     align-items: baseline;
 //   }
 // }
+
+// .container--footer {
+//   display: flex;
+//   align-items: baseline;
+// }
+
 .container {
   width: 320px; //320px is min size
   margin: 0 auto;
   padding: 0 15px;
+  &--footer {
+    display: block;
+  }
 
   //mobile:
   @media screen and (min-width: 480px) {
@@ -31,7 +40,7 @@
     .list__advantage-header {
       text-align: left;
     }
-    .list__clients-img{
+    .list__clients-img {
       width: 226px;
     }
   }
@@ -42,11 +51,21 @@
     .list__advantage-img {
       max-width: 270px;
     }
-    .section__header{
+    .main-section__header {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36;
+      width: 696px;
+    }
+    .section__header {
       font-size: 36px;
     }
-    .list__clients-img{
+    .list__clients-img {
       width: 170px;
+    }
+    &--footer {
+      display: flex;
+      align-items: baseline;
     }
   }
 }
