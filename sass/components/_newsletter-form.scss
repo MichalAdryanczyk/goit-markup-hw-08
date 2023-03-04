@@ -1,19 +1,30 @@
 .newsletter-form {
-  margin-left: auto;
   display: flex;
-
-  flex-direction: row;
-
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    flex-direction: row;
+    text-align: left;
+  }
   &__field {
     display: flex;
     flex-direction: column;
   }
   &__btn {
-    align-self: flex-end;
     position: relative;
-    margin-left: 12px;
+
+    margin-top: 20px;
     text-align: left;
     padding: 0 0 0 42px;
+    @media screen and (min-width: 1200px) {
+      align-self: flex-end;
+      margin-left: 12px;
+      margin-top: 0px;
+    }
   }
   &__icon-send {
     position: absolute;
@@ -27,7 +38,7 @@
     line-height: 1.17;
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -42,6 +53,9 @@
       color: rgba(255, 255, 255, 0.6);
       font-size: 16px;
       line-height: 1.25;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
     }
   }
 }
