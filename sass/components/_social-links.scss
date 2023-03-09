@@ -7,11 +7,17 @@
 /*footer social links area*/
 .social-links-container {
   text-align: center;
-  margin: 60px auto;
-  @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
     text-align: left;
   }
 }
