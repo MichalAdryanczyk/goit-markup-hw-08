@@ -6,6 +6,7 @@
 @import "./components/list";
 @import "./components/main-nav";
 @import "./components/header-contacts";
+@import "./components/header-mobile-menu";
 @import "./components/btn";
 @import "./components/social-links";
 @import "./components/social-links-img";
@@ -83,10 +84,14 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
   background-color: var(--just-white);
   padding: 40px;
+  width: 450px;
+  min-height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .close-btn {
   position: absolute;

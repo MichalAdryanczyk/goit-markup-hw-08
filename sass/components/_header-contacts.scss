@@ -1,24 +1,56 @@
+// base style is tablet, for mobile will be different menu construction
 .header-contacts {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   &__item {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
     text-decoration: none;
     color: var(--light-text-color);
     letter-spacing: 0.02em;
     transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
     &:nth-child(2) {
-      margin-left: 50px;
+      margin-top: 10px;
+      margin-left: 0px;
+      @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+        margin-left: 50px;
+      }
     }
     &:hover,
     &:focus {
       color: var(--my-blue);
     }
   }
-  &__icon {
+  &__icon-envelope {
     fill: currentColor;
     margin-right: 10px;
     vertical-align: middle;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+  &__icon-smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+    vertical-align: middle;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }

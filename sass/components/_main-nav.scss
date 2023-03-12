@@ -8,7 +8,7 @@
   &__list-item {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.17;
+    line-height: 1.14;
     text-decoration: none;
     color: var(--base-text-color);
     letter-spacing: 0.02em;
@@ -30,5 +30,8 @@
         content: "";
       }
     }
+  }
+@media screen and (max-width: 767px) {
+      display: none;
   }
 }

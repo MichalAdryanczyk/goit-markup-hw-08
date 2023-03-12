@@ -3,14 +3,20 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 14px;
-
+  margin-left: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 14px;
+  }
   &__custom {
-    font-size: 14px;
+    font-size: 12px;
+    margin-right: 0px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      margin-right: 14px;
+    }
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--light-text-color);
-    margin-right: 14px;
   }
   &__input[type="checkbox"] {
     background: #fff;
