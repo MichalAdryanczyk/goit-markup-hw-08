@@ -711,12 +711,46 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+      <!-- nav + kontakty w mobilnym menu -->
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__li">
+            <a
+              class="main-nav__list-item main-nav__list-item--current-link"
+              href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="main-nav__li">
+            <a class="main-nav__list-item" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="main-nav__li">
+            <a class="main-nav__list-item" href="#Kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-contacts">
+        <a class="header-contacts__item" href="mailto:info@devstudio.com">
+          <svg
+            class="header-contacts__icon-envelope"
+            width="16px"
+            height="12px"
+          >
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com</a
+        >
+        <a class="header-contacts__item" href="tel:+48111111111">
+          <svg
+            class="header-contacts__icon-smartphone"
+            width="10px"
+            height="16px"
+          >
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +48 111 111 111</a
+        >
+      </div>
     </div>
 
     <script
