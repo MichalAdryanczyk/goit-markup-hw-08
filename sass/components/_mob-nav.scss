@@ -1,0 +1,25 @@
+.mob-nav {
+  &__list {
+    margin-left: 8px;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 200px;
+    }
+  }
+  &__list-item {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
+    text-decoration: none;
+    color: var(--base-text-color);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--my-blue);
+    }
+    &--current-link {
+      color: var(--my-blue);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.mob-header-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
+  &__item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--light-text-color);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+    &:nth-child(2) {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    &:hover,
+    &:focus {
+      color: var(--my-blue);
+    }
+  }
+}
