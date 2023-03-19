@@ -89,8 +89,11 @@ footer {
   transform: translate(-50%, -50%);
   background-color: var(--just-white);
   padding: 40px;
-  width: 450px;
-  min-height: 609px;
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;

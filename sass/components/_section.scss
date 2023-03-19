@@ -20,11 +20,10 @@
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    &--main {
+    @media screen and (min-width: 768px) {
+      // &--main {
       background-image: linear-gradient(
           to bottom,
           var(--bg-image-color),
@@ -34,10 +33,10 @@
       background-size: cover;
       max-width: 768px;
       height: 400px;
+      // }
     }
-  }
-  @media screen and (min-width: 1200px) {
-    &--main {
+    @media screen and (min-width: 1200px) {
+      // &--main {
       background-image: linear-gradient(
           to bottom,
           var(--bg-image-color),
@@ -47,8 +46,11 @@
       background-size: cover;
       max-width: 1600px;
       height: 600px;
+      padding: 200px 0;
+      // }
     }
   }
+
   &--profile {
     padding-top: 0px;
     @media screen and (max-width: 1199px) {
