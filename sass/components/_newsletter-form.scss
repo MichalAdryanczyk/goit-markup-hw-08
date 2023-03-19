@@ -43,7 +43,8 @@
     line-height: 1.17;
   }
   &__input {
-    width: 450px;
+    // max-width: 450px;
+    min-width: 290px;
     height: 50px;
     padding: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -58,6 +59,9 @@
       color: rgba(255, 255, 255, 0.6);
       font-size: 16px;
       line-height: 1.25;
+    }
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
